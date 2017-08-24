@@ -13,6 +13,10 @@
 		6EB580431F4F8B560021BEAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB580411F4F8B560021BEAA /* Main.storyboard */; };
 		6EB580451F4F8B560021BEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB580441F4F8B560021BEAA /* Assets.xcassets */; };
 		6EB580481F4F8B560021BEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EB580461F4F8B560021BEAA /* LaunchScreen.storyboard */; };
+		6EB580591F4F8B6D0021BEAA /* closedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB580511F4F8B6D0021BEAA /* closedIcon.png */; };
+		6EB5805A1F4F8B6D0021BEAA /* openedIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EB580521F4F8B6D0021BEAA /* openedIcon.png */; };
+		6EB5805B1F4F8B6D0021BEAA /* DBHTESection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB580551F4F8B6D0021BEAA /* DBHTESection.m */; };
+		6EB5805C1F4F8B6D0021BEAA /* DBHTETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB580581F4F8B6D0021BEAA /* DBHTETableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		6EB580441F4F8B560021BEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB580471F4F8B560021BEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EB580491F4F8B560021BEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EB580511F4F8B6D0021BEAA /* closedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closedIcon.png; sourceTree = "<group>"; };
+		6EB580521F4F8B6D0021BEAA /* openedIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = openedIcon.png; sourceTree = "<group>"; };
+		6EB580541F4F8B6D0021BEAA /* DBHTESection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHTESection.h; sourceTree = "<group>"; };
+		6EB580551F4F8B6D0021BEAA /* DBHTESection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHTESection.m; sourceTree = "<group>"; };
+		6EB580571F4F8B6D0021BEAA /* DBHTETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHTETableViewController.h; sourceTree = "<group>"; };
+		6EB580581F4F8B6D0021BEAA /* DBHTETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHTETableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			children = (
 				6EB5803B1F4F8B560021BEAA /* AppDelegate.h */,
 				6EB5803C1F4F8B560021BEAA /* AppDelegate.m */,
+				6EB5804F1F4F8B6D0021BEAA /* DBHTE */,
 				6EB5803E1F4F8B560021BEAA /* ViewController.h */,
 				6EB5803F1F4F8B560021BEAA /* ViewController.m */,
 				6EB580411F4F8B560021BEAA /* Main.storyboard */,
@@ -77,6 +88,43 @@
 				6EB580391F4F8B560021BEAA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EB5804F1F4F8B6D0021BEAA /* DBHTE */ = {
+			isa = PBXGroup;
+			children = (
+				6EB580501F4F8B6D0021BEAA /* Resources */,
+				6EB580531F4F8B6D0021BEAA /* Sections */,
+				6EB580561F4F8B6D0021BEAA /* TableView */,
+			);
+			path = DBHTE;
+			sourceTree = "<group>";
+		};
+		6EB580501F4F8B6D0021BEAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6EB580511F4F8B6D0021BEAA /* closedIcon.png */,
+				6EB580521F4F8B6D0021BEAA /* openedIcon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6EB580531F4F8B6D0021BEAA /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				6EB580541F4F8B6D0021BEAA /* DBHTESection.h */,
+				6EB580551F4F8B6D0021BEAA /* DBHTESection.m */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		6EB580561F4F8B6D0021BEAA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6EB580571F4F8B6D0021BEAA /* DBHTETableViewController.h */,
+				6EB580581F4F8B6D0021BEAA /* DBHTETableViewController.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EB580591F4F8B6D0021BEAA /* closedIcon.png in Resources */,
 				6EB580481F4F8B560021BEAA /* LaunchScreen.storyboard in Resources */,
+				6EB5805A1F4F8B6D0021BEAA /* openedIcon.png in Resources */,
 				6EB580451F4F8B560021BEAA /* Assets.xcassets in Resources */,
 				6EB580431F4F8B560021BEAA /* Main.storyboard in Resources */,
 			);
@@ -152,8 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB580401F4F8B560021BEAA /* ViewController.m in Sources */,
+				6EB5805B1F4F8B6D0021BEAA /* DBHTESection.m in Sources */,
 				6EB5803D1F4F8B560021BEAA /* AppDelegate.m in Sources */,
 				6EB5803A1F4F8B560021BEAA /* main.m in Sources */,
+				6EB5805C1F4F8B6D0021BEAA /* DBHTETableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBHTETableViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<DBHTETableDelegate>
 
 @end
 
